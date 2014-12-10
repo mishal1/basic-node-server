@@ -11,7 +11,7 @@ grunt.initConfig({
     }
   },
   express: {
-    options:{delay: 1000},
+    options:{},
     dev: {
       options: {
         script: './server.js'
