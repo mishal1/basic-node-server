@@ -1,4 +1,6 @@
+var chai = require('chai');
 var expect = chai.expect;
+var Bike = require('../src/bike')
 
 describe('Bike', function() {
 
