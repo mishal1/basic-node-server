@@ -3,7 +3,11 @@
   </head>
 
   <body>
-  Hello world
+  <% if (name) { %>
+    Hello <%= name %>
+  <% } else { %>
+    Hello world
+  <% } %>
 
   <form action="/" method="post">
     <input name="name" type="text">
