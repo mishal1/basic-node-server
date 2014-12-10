@@ -17,11 +17,20 @@ grunt.initConfig({
         script: './server.js'
       }
     }
+  },
+  mocha: {
+    all: {
+      src:['test/testrunner.html'],
+    },
+    options:{
+      run: true
+    }
   }
 });
 
 grunt.loadNpmTasks('grunt-mocha-casperjs')
 grunt.loadNpmTasks('grunt-express-server')
-grunt.registerTask('default',['express','mocha_casperjs'])
+grunt.loadNpmTasks('grunt-mocha')
+grunt.registerTask('default',['express','mocha_casperjs','mocha'])
 
 }
