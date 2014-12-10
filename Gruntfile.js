@@ -9,10 +9,19 @@ grunt.initConfig({
     files: {
       src: ['test/**/*']
     }
+  },
+  express: {
+    options:{delay: 1000},
+    dev: {
+      options: {
+        script: './server.js'
+      }
+    }
   }
 });
 
 grunt.loadNpmTasks('grunt-mocha-casperjs')
-grunt.registerTask('default',['mocha_casperjs'])
+grunt.loadNpmTasks('grunt-express-server')
+grunt.registerTask('default',['express','mocha_casperjs'])
 
 }
