@@ -6,6 +6,10 @@ app.get('/', function(request, response){
   response.render('index.ejs');
 });
 
+app.post('/', function(request, response){
+  response.render('index.ejs');
+});
+
 server.listen(3000, function(){
   console.log("Server listening on port 3000")
 });

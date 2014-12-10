@@ -13,10 +13,11 @@ describe('homepage', function(){
     casper.then(function(){
       'form[action="/"]'.should.be.inDOM.and.be.visible
       'input[name="name"]'.should.be.inDOM.and.be.visible
+      this.fill('form[action="/"]',{
+        name: 'nick'
+      }, true);
+      this.click('input[value="submit"]')
+      expect("body").to.contain.text("Hello nick")
     });
   });
-
-
-
-
 });
