@@ -7,7 +7,7 @@ grunt.initConfig({
       color: false
     },
     files: {
-      src: ['test/**/*']
+      src: ['test/**/*.js']
     }
   },
   express: {
