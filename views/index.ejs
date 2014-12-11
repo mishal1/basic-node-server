@@ -14,6 +14,10 @@
     <input type="submit" value="submit">
   </form>
 
+  <% api.items.forEach(function(item){ %>
+    <%= item.login  %> 
+  <% }); %>
+
   </body>
 
 </html>
