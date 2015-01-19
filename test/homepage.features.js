@@ -18,7 +18,7 @@ describe('homepage', function(){
       }, true);
       this.click('input[value="submit"]')
     });
-    casper.waitForUrl('/',function(){
+    casper.then(function(){
       expect("body").to.contain.text("Hello nick");
     });
   });

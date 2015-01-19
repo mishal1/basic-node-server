@@ -7,12 +7,11 @@ var api = require('./src/api.js');
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function(request, response){
-  console.log(api)
   response.render('index.ejs', {name: null, api: api});
 });
 
 app.post('/', function(request, response){
-  response.render('index.ejs', {name: request.body.name});
+  response.render('index.ejs', {name: request.body.name, api: api});
 });
 
 server.listen(3000, function(){
