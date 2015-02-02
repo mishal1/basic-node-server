@@ -1,5 +1,7 @@
 #A Node Server
 
+[![Code Climate](https://codeclimate.com/github/nickbdyer/node-server/badges/gpa.svg)](https://codeclimate.com/github/nickbdyer/node-server)
+
 Week 7 Wednesday at Makers Academy
 
 ###Notes
