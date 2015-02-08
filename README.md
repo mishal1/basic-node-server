@@ -1,28 +1,20 @@
-#A Node Server
+#Basic Node Server
 
 [![Code Climate](https://codeclimate.com/github/nickbdyer/node-server/badges/gpa.svg)](https://codeclimate.com/github/nickbdyer/node-server)
 
 Week 7 Wednesday at Makers Academy
 
-###Notes
-
+##Context
 This project was another small setup to familiarise myself with Node. We used
-the Boris Bikes project as a basis to try to setup some testing. 
+the Boris Bikes project as a basis to try to setup some testing. Built while pair-programming with [Nick Dyer](https://github.com/nickbdyer).
 
-###Technologies
+##Learning Objectives
+- TDD using Mocha, CasperJS and Chai
 
-Testing frameworks were the drive behind this repo, and they proved difficult
-to setup:
-
+##Technology Used
+- Javascript
+- Node
+- Express
 - Mocha
 - CasperJS
 - Chai
-
-###Lessons Learned
-
-- There is a huge amount of value in setting up Grunt as your automation
-  framework. 
-
-###Improvements
-
-Since this was a small test setup, no further work is desired.
